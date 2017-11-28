@@ -340,8 +340,8 @@ footer p
 
 #chooseLang
 {
-  height: 90%; 
-  width: 90%;
+  height: 40vh; 
+  width: 90vw;
   padding-bottom: 40vh;
 }
 
@@ -351,12 +351,12 @@ footer p
   padding-bottom: 30vh;
 }
 
-.lang
+.langE,
+.langP
 {
+  display: inline;
   font-size: 500%;
   text-decoration: none;
-  margin-right: 10%;
-  margin-left: 10%;
   box-shadow: 1px 1px 20px gray;
   border-radius: 10px;
   color: orange;
@@ -364,12 +364,14 @@ footer p
   padding: 1% 2% 1% 2%;
 }
 
-.lang:hover
+.langE:hover,
+.langP:hover
 {
   color: white;
   background-color: orange;
 }
-.lang:active
+.langE:active,
+.LangP:active
 {
   color: orange;
   background-color: white;
@@ -379,6 +381,17 @@ footer p
 {
   padding-top: 1.5%; 
   text-align: left;
+}
+
+.langE
+{
+  float: left;
+  margin-left: 5%;
+}
+.langP
+{
+  float: right;
+  margin-right: 5%;
 }
 
 /*--------------------------------------------------------------------------------*/
