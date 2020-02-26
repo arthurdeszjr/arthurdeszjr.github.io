@@ -258,7 +258,7 @@ video
 .block
 {
     width: 25vw;
-    height: 30vh;
+    height: 50vh;
 
     /*min-width: 30%;*/
 
@@ -286,7 +286,7 @@ video
 
 .block img
 {
-    width: 100%;
+    width: 15vw;
     height: auto;
 }
 
