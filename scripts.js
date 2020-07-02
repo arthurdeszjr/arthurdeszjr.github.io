@@ -34,6 +34,18 @@ function closeModal()
 var slideIndex = 1;
 showSlides(slideIndex);
 
+//------------------------------------------//
+function pauseVid(vidId) 
+{ 
+  var vid = document.getElementById(vidId);
+  vid.pause();
+}
+function playVid() 
+{ 
+  var vid = document.getElementById("slideVid");
+  vid.play();
+} 
+//------------------------------------------//
 function plusSlides(n) 
 {
   showSlides(slideIndex += n);

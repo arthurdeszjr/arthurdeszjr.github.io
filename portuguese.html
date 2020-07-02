@@ -14,11 +14,16 @@
 		  	<script src="modCounter.js"></script>
 	</head>
 	
-	<de Corpo>
+	<header>
+		<h1>Arthur de Souza Júnior</h1>
+		<p>3D Artist | Animator <p>
+	</header>
+
+	<bodys>
 		<div class="tab">
-		  <button class="tablinks" onclick="openTab(event, 'Alpha')" id="defaultOpen">Sobre Mim</button>
-		  <button class="tablinks" onclick="openTab(event, 'Beta')">Currículo</button>
-		  <button class="tablinks" onclick="openTab(event, 'Charlie')">Portfólio</button>
+		  <button class="tablinks" onclick="pauseVid('mainVid'); openTab(event, 'Alpha');" id="defaultOpen">Sobre Mim</button>
+		  <button class="tablinks" onclick="pauseVid('mainVid'); openTab(event, 'Beta')">Currículo</button>
+		  <button class="tablinks" onclick="pauseVid('mainVid'); openTab(event, 'Charlie')">Portfólio</button>
 		</div>
 
 		<!--=========================================================================================-->
@@ -29,7 +34,7 @@
 			  	<div class="firsDivision">
 				  	<div class ="project">
 					  	<h3 class="title"> Trabalho em Evidência:</h3>
-					  	<video controls>
+					  	<video id="mainVid" controls>
 					  		<source src="vd/The Doom Marine.webm" type="video/webm">
 					  	</video>
 					  	<p><big><b>Demo Reel: The Doom Marine</b></big></p>
@@ -44,7 +49,7 @@
 				</div>
 				<div class="division">
 					<div class="text">
-						<h3 class="title">Sobre Mim:</h3>
+						<h3 class="title">Quem Sou:</h3>
 						<p>Sou um jovem artista brasileiro, desde 2012 estive estudando e trabalhando em video-games e modelagem 3D e escultura digitas, texturização PBR, e Animação.</p>
 
 						<p>Me formei em dois cursos profissionalizantes de games 2, o primeiro, em 2014, Seven Games, que posteriormente virou a Redzero e em 2015 no curso Técnico do Desenvolvimento de Jogos Digitais - SENAI.</p>
@@ -183,143 +188,155 @@
 		    	<p class="subtitle">Além deste Website, Aqui estão alguns trabalhos e conquistas visuais que atingi ao longo da minha vida! </p>
 		    	<p class="subtitle"> Eles estão em ordem, do mais recente no topo esquerdo, ao mais antigo na inferioridade direita.</p>
 
-
 		    	<div class="block" onclick="openModal();currentSlide(1)">
+					<h3> The Doom Marine</h3>
+				    <img src="img/Doom Marine.png"><br>
+			    </div>
+		    	<div class="block" onclick="openModal();currentSlide(2)">
 					<h3> Buraco Negro (Unity)</h3>
 					<h5>(ver gif)</h5>
 				    <img src="img/UniBlaHol.png"><br>
 			    </div>
-		    	<div class="block" onclick="openModal();currentSlide(2)">
+		    	<div class="block" onclick="openModal();currentSlide(3)">
 					<h3> Fogo Adaptável </h3>
 					<h5>(ver gif)</h5>
 				    <img src="img/Fire.png"><br>
 			    </div>
 
-		    	<div class="block" onclick="openModal();currentSlide(3)">
+		    	<div class="block" onclick="openModal();currentSlide(4)">
 					<h3> MPRJ Interior </h3>
 					<h5>(ver gif)</h5>
 				    <img src="img/MPRJ-Int/1.png"><br>
 			    </div>
 
-		  		<div class="block" onclick="openModal();currentSlide(4)">
+		  		<div class="block" onclick="openModal();currentSlide(5)">
 					<h3> Adam Blake (Em Progresso)</h3>
 				    <img src="img/Adam Blake Sculpt.png"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(5)">
+			    <div class="block" onclick="openModal();currentSlide(6)">
 					<h3> Sargento Sayra (Em Progresso)</h3>
 				    <img src="img/SGT Sayra4.png"><br>
 			    </div>
 
-		  		<div class="block" onclick="openModal();currentSlide(6)">
+		  		<div class="block" onclick="openModal();currentSlide(7)">
 					<h3> O.M.E.G.A Gabriel</h3>
-				    <img src="img/Gabriel.png"><br>
+				    <img src="img/Gabriel_Thumb.png"><br>
 			    </div>
 
-		    	<div class="block" onclick="openModal();currentSlide(7)">
+		    	<div class="block" onclick="openModal();currentSlide(8)">
 					<h3> Passarela</h3>
 				    <img src="img/Catwalk.png"><br>
 			    </div>
 			    
-			    <div class="block" onclick="openModal();currentSlide(8)">
+			    <div class="block" onclick="openModal();currentSlide(9)">
 				    <h3> Adam Blake (Versão 2.0)</h3>
-				    <img src="img/Adam Blake.png"><br>
+				    <img src="img/Adam Blake_thumb.png"><br>
 				</div>
 
-				<div class="block" onclick="openModal();currentSlide(9)">
+				<div class="block" onclick="openModal();currentSlide(10)">
 					<h3> Base Anatômica Masculina Padrão</h3>
-				    <img src="img/Human.png"><br>
+				    <img src="img/Human_thumb.png"><br>
 			    </div>
 			    
-			    <div class="block" onclick="openModal();currentSlide(10)">
+			    <div class="block" onclick="openModal();currentSlide(11)">
 				    <h3> Toga</h3>
-				    <img src="img/Togão.png"><br>
+				    <img src="img/Togão_Thumb.png"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(11)">
+			    <div class="block" onclick="openModal();currentSlide(12)">
 				    <h3> Buraco Negro</h3>
 				    <img src="img/Black Hole.png"><br>
 			    </div>
 			     
-			   	<div class="block" onclick="openModal();currentSlide(12)"> 
+			   	<div class="block" onclick="openModal();currentSlide(13)"> 
 				    <h3> Prédio</h3>
 				    <img src="img/Building.png"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(13)"> 
+			    <div class="block" onclick="openModal();currentSlide(14)"> 
 				    <h3> Zakk Wylde Correndo</h3>
 				    <img src="img/Zakk Run.png"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(14)"> 
+			    <div class="block" onclick="openModal();currentSlide(15)"> 
 				    <h3> Zakk Wylde Pixel Art</h3>
 				    <img src="img/Zakk Wylde.png"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(15)">
+			    <div class="block" onclick="openModal();currentSlide(16)">
 				    <h3> Rifle Spin ACDG-004 </h3>
 				    <img src="img/Spin Rifle.png"><br>		 
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(16)">  
+			    <div class="block" onclick="openModal();currentSlide(17)">  
 				    <h3> Sargenta Sayra (Ver. 1 da Geometria)</h3>
-				    <img src="img/Sayra.png"><br>	
+				    <img src="img/Sayra_thumb.png"><br>	
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(17)">  
+			    <div class="block" onclick="openModal();currentSlide(18)">  
 				    <h3> Rifle Lakkiano</h3>
 				    <img src="img/Lakkian Rifle.png"><br>	
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(18)">  
+			    <div class="block" onclick="openModal();currentSlide(19)">  
 				    <h3> Adam Blake (Primeira Versão)</h3>
 				    <img src="img/Adam.png"> <br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(19)">
+			    <div class="block" onclick="openModal();currentSlide(20)">
 				    <h3> O.M.E.G.A Versão Alfa Screenshot</h3>
 				    <img src="img/Omega.PNG"> <br>
 			   	</div>
 
-			    <div class="block" onclick="openModal();currentSlide(20)">
+			    <div class="block" onclick="openModal();currentSlide(21)">
 				    <h3> O.M.E.G.A Giallini</h3>
-				    <img src="img/Giallini.png"> <br>
+				    <img src="img/Giallini_Thumb.png"> <br>
 			   	</div>
 
-			   	<div class="block" onclick="openModal();currentSlide(21)">
+			   	<div class="block" onclick="openModal();currentSlide(22)">
 				    <h3> O.M.E.G.A Daniel e Bohriano</h3>
 				    <img src="img/Chars.png"> <br>
 			   	</div>
 
-			   	<div class="block" onclick="openModal();currentSlide(22)">   
+			   	<div class="block" onclick="openModal();currentSlide(23)">   
 				    <h3> Easter Egg de Um Caça Caido </h3>
 				    <img src="img/Jet.jpg"> <br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(23)">  
+			    <div class="block" onclick="openModal();currentSlide(24)">  
 				    <h3> Camarão Pistola</h3>
 				    <img src="img/Shrimp.png"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(24)">  
+			    <div class="block" onclick="openModal();currentSlide(25)">  
 				    <h3> Karma Game Logo</h3>
 				    <img src="img/Karma Lg.jpg"><br>
 			    </div>
 
-			    <div class="block" onclick="openModal();currentSlide(25)">
+			    <div class="block" onclick="openModal();currentSlide(26)">
 				    <h3> Karma Game Protagonista</h3>
 				    <img src="img/Karma.jpg"><br>
 			    </div>
 			</div>
 
 			<div id="myModal" class="modal">
-  				<span class="close cursor" onclick="closeModal()">&times;</span>
+  				<span class="close cursor" onclick="pauseVid('slideVid'); closeModal();">&times;</span>
   				<div class="modal-content">
 
 					<!--================================================-->
+					<div class="mySlides">
+      					<h3>The Doom Marine (Unity)</h3>
+      					<div class="numbertext"><script>CountImages(26)</script></div>
+      					<video id="slideVid" controls>
+					  		<source src="vd/The Doom Marine.webm" type="video/webm">
+					  	</video>
+      					<p>Este foi feito como homenagem de fan.</p>
+				    	<p>Objetivo: fanart; <br> Nome da Franquia Referenciada: Doom (desenvolvido por Id Software e publicado por Bethesda); <br> Ferramentas:Blender, Zbrush, Photoshop, Substance Painter, Unity <br>Ano: 2020</p>
+    				</div>
   					<div class="mySlides">
       					<h3>Buraco Negro (Unity)</h3>
-      					<div class="numbertext"><script>CountImages(25)</script></div>
+      					<div class="numbertext"><script>CountImages()</script></div>
       					<img src="img/UnityBlackHole.gif">
       					<p>Este foi feito para meu projeto pessoal de Game.</p>
 				    	<p>Objetivo: Video-games; <br> Nome de Projeto: S.I.G.M.A; <br> Ferramentas: Unity <br>Ano: 2020</p>
@@ -518,8 +535,8 @@
 				    	<p> Objetivo: Video-Game; <br> Nome de Projeto: Karma: A Childhood Dream; <br> Ferramentas: Photoshop, Unity <br> Ano: 2015</p>
     				</div>
 				</div>
-	    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    		<a class="prev" onclick="pauseVid('slideVid'); plusSlides(-1);">&#10094;</a>
+	    		<a class="next" onclick="pauseVid('slideVid'); plusSlides(1);">&#10095;</a>
 
 	    		<div class="caption-container">
 	      			<p id="caption"></p>
@@ -541,5 +558,5 @@
 	    	</ul>
 	    	<p>2017 Arthur de Souza Júnior</p>
 	    </footer>
-	</de Corpo>
+	</body>
 </html>

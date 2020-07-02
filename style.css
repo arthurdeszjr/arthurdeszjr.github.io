@@ -7,11 +7,6 @@
         margin-right: 2.5%;
     }
 
-    .inner-content
-    {
-      width: 80%;
-      height: auto;
-    }
 
     .text
     {
@@ -65,8 +60,21 @@ body
 
 header
 {
-    float: center;
+  float: center;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+
+header h1
+{
+    
+    font-size: 300%;
+}
+
+header p
+{
     text-align: center;
+    font-size: 150%;
 }
 
 h1
@@ -88,7 +96,7 @@ h3
 
 .block h3
 {
-    padding-top: 2px;
+    padding-top: 1%;
 }
 
 .Tabtitle
@@ -179,14 +187,17 @@ video
 
 .inner-content
 {
-    margin: auto;
-    text-align: center;
-    background-color: #222;
-    box-shadow: 1px 1px 20px black;
-    border-radius: 10px;
-    display: block;
-    /*padding-top: 5px solid black;*/
-    margin-top: 1%;
+  width: 95%;
+  height: auto;
+  
+  margin: auto;
+  text-align: center;
+  background-color: #222;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  display: block;
+  /*padding-top: 5px solid black;*/
+  margin-top: 1%;
 }
 
 #curr
@@ -257,24 +268,22 @@ video
 
 .block
 {
-    width: 25vw;
-    height: 50vh;
-
-    /*min-width: 30%;*/
+    width: 40vw;
+    height: auto;
 
     overflow: hidden;
 
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-top: 1.25%;
-    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 
     display: inline-block;
     background-color: #333;
 
-    border-bottom: 5vh solid #333;
+    /*border-bottom: 1vh solid #333;
     border-left: 5vw solid #333;
-    border-right: 5vw solid #333;
+    border-right: 5vw solid #333;*/
     
     cursor: pointer;
 
@@ -286,17 +295,19 @@ video
 
 .block img
 {
-    width: 15vw;
+    width: 95%;
     height: auto;
+    margin-bottom: 2.5%;
+    border-radius: 10px;
 }
 
 .block:hover
 {
     box-shadow: 1px 1px 20px  black;
     opacity: 1;
-    border-bottom: 5vh solid #444;
+    /*border-bottom: 5vh solid #444;
     border-left: 5vw solid #444;
-    border-right: 5vw solid #444;
+    border-right: 5vw solid #444;*/
     background-color: #444;
     color: orange;
 }
@@ -524,6 +535,17 @@ div.tab button.active
 }
 
 .mySlides img 
+{
+  max-width: 70vw;
+  max-height: 70vh;
+
+  width: auto;
+  height: auto;
+
+  border-radius: 10px;
+}
+
+.mySlides video
 {
   max-width: 70vw;
   max-height: 70vh;
