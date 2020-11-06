@@ -280,6 +280,10 @@ video
 
     display: inline-block;
     background-color: #333;
+
+    /*border-bottom: 1vh solid #333;
+    border-left: 5vw solid #333;
+    border-right: 5vw solid #333;*/
     
     cursor: pointer;
 
