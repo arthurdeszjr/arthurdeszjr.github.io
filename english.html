@@ -7,11 +7,27 @@
 
 		  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		  	<link rel="stylesheet" href="style.css">
-		  
-		 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  	
 		  	<script src="scripts.js"></script> 
 			<script src="modCounter.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="jquery-3.5.1.min.js"></script>
+			<script>
+				$('a.play-video').click(function(){
+				$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+				});
+
+				$('a.stop-video').click(function(){
+				$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+				});
+
+				$('a.pause-video').click(function(){
+					console.log("I'm getting Here");
+				$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+				});
+			</script>
+
 	</head>
 	
 	<header>
@@ -21,9 +37,9 @@
 
 	<body>
 		<div class="tab">
-		  <button class="tablinks" onclick=" openTab(event, 'Alpha')" id="defaultOpen">About Me</button>
-		  <button class="tablinks" onclick=" openTab(event, 'Beta')">Résumé</button>
-		  <button class="tablinks" onclick=" openTab(event, 'Charlie')">Portfolio</button>
+		  <button href="#" class="pause-video tablinks" onclick=" openTab(event, 'Alpha')" id="defaultOpen">About Me</button>
+		  <button href="#" class="pause-video tablinks" onclick=" openTab(event, 'Beta')">Résumé</button>
+		  <button href="#" class="pause-video tablinks" onclick=" openTab(event, 'Charlie')">Portfolio</button>
 		</div>
 
 		<!--=========================================================================================-->
@@ -33,7 +49,9 @@
 			  	<div class="firsDivision">
 				  	<div class ="project">
 					  	<h3 class="title"> Featured Work:</h3>
-					  	<iframe width="640" height="360" src="https://www.youtube.com/embed/_07CtX_4xrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					  	<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/_07CtX_4xrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 					  	<p><big><b>Demo Reel: The Doom Marine</b></big></p>
 					  	<p>This is one is fan Reinterpretation of a character from a franchise I love from childhood: <b>Doom</b></p>
 					  	<p> This is just a <b>non-profit fan-based tribute art</b>, this model is <b>not</b> part of any project other than this only video you're seeing on the left.</p>
@@ -328,14 +346,14 @@
   					<div class="mySlides">
       					<h3>Unnamed Somnivore No. 11</h3>
       					<div class="numbertext"><script>CountImages(27)</script></div>
-      					<iframe width="640" height="360" src="https://www.youtube.com/embed/m1MbzKEI8dc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      					<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/m1MbzKEI8dc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       					<p>This was made for Somnivores a game I'm developping with FIRE Game Studio. The goal was to model the creature on the Background Image (Concept by Juliana Ferreira, 2D design team) in 3D as to convert It to the game's more cartoony style</p>
 				    	<p>Purpose: Video-games; <br> Project Name: Somnivores;<br> Tools: Blender<br>Year: 2020</p>
     				</div>
   					<div class="mySlides">
       					<h3>The Doom Marine (Unity)</h3>
       					<div class="numbertext"><script>CountImages()</script></div>
-      					<iframe width="640" height="360" src="https://www.youtube.com/embed/_07CtX_4xrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      					<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/_07CtX_4xrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       					<p>This one was made as a fan tribute.</p>
 				    	<p>Purpose: fanart; <br> Name of referred franchise: Doom (desenveloped Id Software and published by Bethesda); <br> Tools:Blender, Zbrush, Photoshop, Substance Painter, Unity <br>Year: 2020</p>
     				</div>
@@ -542,8 +560,8 @@
 				    	<p> Purpose: Video-Game; <br> Project Name: Karma: A Childhood Dream; <br> Tools: Photoshop, Unity <br> Year: 2015</p>
     				</div>
 				</div>
-	    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    		<a class="next" onclick=" plusSlides(1)">&#10095;</a>
+	    		<a href="#" class="pause-video prev" onclick=" plusSlides(-1)">&#10094;</a>
+	    		<a href="#" class="pause-video next" onclick=" plusSlides(1)">&#10095;</a>
 
 	    		<div class="caption-container">
 	      			<p id="caption"></p>
@@ -559,9 +577,9 @@
 		<footer>
 			<p onclick="topFunction()" id="myBtn" title="Go to top">^</p>
 			<ul>
-	    		<li><a onclick="openTab(event, 'Alpha')">About</a></li>
-	    		<li><a onclick="openTab(event, 'Beta')">Résumé</a></li>
-	    		<li><a onclick="openTab(event, 'Charlie')">Portfolio</a></li>
+	    		<li><a href="#" class="pause-video" onclick="openTab(event, 'Alpha')">About</a></li>
+	    		<li><a href="#" class="pause-video" onclick="openTab(event, 'Beta')">Résumé</a></li>
+	    		<li><a href="#" class="pause-video" onclick="openTab(event, 'Charlie')">Portfolio</a></li>
 	    	</ul>
 	    	<p>2017 Arthur de Souza Júnior</p>
 	    </footer>

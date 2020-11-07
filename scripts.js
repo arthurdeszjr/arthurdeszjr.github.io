@@ -37,7 +37,7 @@ showSlides(slideIndex);
 //------------------------------------------//
 function pauseVid(vidId) 
 { 
-  var vid = document.getElementById(vidId);
+  var vid = document.getElementById("vidId");
   //vid.pause();
 }
 function playVid() 
