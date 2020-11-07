@@ -38,12 +38,12 @@ showSlides(slideIndex);
 function pauseVid(vidId) 
 { 
   var vid = document.getElementById(vidId);
-  vid.pause();
+  //vid.pause();
 }
 function playVid() 
 { 
   var vid = document.getElementById("slideVid");
-  vid.play();
+  //vid.play();
 } 
 //------------------------------------------//
 function plusSlides(n) 

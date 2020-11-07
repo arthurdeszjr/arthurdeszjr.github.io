@@ -6,7 +6,11 @@
         float:left;
         margin-right: 2.5%;
     }
-
+      iframe
+    {
+        float:left;
+        margin-right: 2.5%;
+    }
 
     .text
     {
@@ -32,6 +36,11 @@
         width: 100%;
         height:auto;
     }
+    iframe
+    {
+        margin-right: 2.5%;
+    }
+
 
     .inner-content
     {
@@ -119,6 +128,10 @@ p
 }
 
 video
+{
+    border-radius: 10px;
+}
+iframe
 {
     border-radius: 10px;
 }
@@ -553,6 +566,12 @@ div.tab button.active
   width: auto;
   height: auto;
 
+  border-radius: 10px;
+}
+.mySlides iframe
+{
+  max-width: 100vw;
+  max-height: 100vh;
   border-radius: 10px;
 }
 
