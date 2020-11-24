@@ -331,14 +331,14 @@
   					<div class="mySlides">
       					<h3>Unnamed Somnivore No. 11</h3>
       					<div class="numbertext"><script>CountImages(27)</script></div>
-      					<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/m1MbzKEI8dc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      					<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/m1MbzKEI8dc?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       					<p>This was made for Somnivores a game I'm developping with FIRE Game Studio. The goal was to model the creature on the Background Image (Concept by Juliana Ferreira, 2D design team) in 3D as to convert It to the game's more cartoony style</p>
 				    	<p>Purpose: Video-games; <br> Project Name: Somnivores;<br> Tools: Blender<br>Year: 2020</p>
     				</div>
   					<div class="mySlides">
       					<h3>The Doom Marine (Unity)</h3>
       					<div class="numbertext"><script>CountImages()</script></div>
-      					<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/_07CtX_4xrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      					<iframe class="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/_07CtX_4xrw?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       					<p>This one was made as a fan tribute.</p>
 				    	<p>Purpose: fanart; <br> Name of referred franchise: Doom (desenveloped Id Software and published by Bethesda); <br> Tools:Blender, Zbrush, Photoshop, Substance Painter, Unity <br>Year: 2020</p>
     				</div>
@@ -559,6 +559,7 @@
 			// Get the element with id="defaultOpen" and click on it
 			document.getElementById("defaultOpen").click();
 		</script>
+		
 		<script>
 			$('a.play-video').click(function(){
 			$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
