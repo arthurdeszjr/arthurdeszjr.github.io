@@ -560,6 +560,19 @@
 			document.getElementById("defaultOpen").click();
 		</script>
 		<script>
+			$('a.play-video').click(function(){
+			$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+			});
+
+			$('a.stop-video').click(function(){
+			$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+			});
+			//console.log($('a.pause-video'));
+			$('a.pause-video').click(function(){
+				console.log("I'm getting Here");
+			$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+			});
+		</script>
 
 		<footer>
 			<p onclick="topFunction()" id="myBtn" title="Go to top">^</p>
